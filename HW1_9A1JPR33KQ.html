@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .main-container{
+            display: flex;
+            width: 100%;
+            height: 600px;
+        }
+        .container-1{
+            margin: auto;
+            padding: 15px;
+            width: 70%;
+            height: 370px;
+            background-color: #e9e9e9;
+            border-radius: 10px;
+            
+            
+        }
+        
+        .form-outline{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            
+            
+        }
+
+        .form-outline input{
+            flex: 1;
+            height: 70px;
+        }
+        .one{
+            border: 1px solid lightgray;   
+           
+        }
+
+
+        .submit{
+            margin-top: 2px;
+            border-radius: 4px;
+            width: 80px;
+            height: 35px;
+            font-size: 1rem;
+            background-color: rgb(6, 136, 82);
+            color: white;
+        }
+
+        
+       
+
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <div class="container-1">
+        <form action="">
+            <div class="form-outline">
+                <label for="firstName">First Name</label>
+                <input class="one" type="text" placeholder="Your name..">
+            </div>
+
+            <div class="form-outline">
+                <label for="lastName">Last Name</label> 
+                <input class="one" type="text" placeholder="Your Last Name..">
+            </div>
+
+            <div class="form-outline">
+                <label for="firstName">Country</label>
+                <select class="one" name="country" id="Gh">
+                    <option value="">Australia</option>
+                    <option value="">Ghana</option>
+                    <option value="">Nigeria</option>
+                    <option value="">Togo</option>
+                </select>
+            </div>
+                
+            <div class="form-outline">
+                <label for="">Subject</label> <br>
+                <textarea class="one" name="input" id="" cols="30" rows="10">Write something..</textarea>
+            </div>
+
+            <div class="btn">
+                <button class="submit" type="submit" value="Submit">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+</body>
+</html>
