@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Function</title>
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: palegoldenrod;
+        }
+        .inner-container{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 60%;
+            background-color: white;
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 90%;
+            
+            
+        }
+
+        .row1{
+            flex: 1;
+            background-color: blue;
+            color:#fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .row2{
+            flex: 1;
+            background-color: red;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input{
+            background-color: white;
+            border: 0px;
+            width: 150px;
+            height: 50px;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: blue;
+        }
+        #second{
+            color: red;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="inner-container">
+        <div class="wrapper">
+        <div class="row1">
+            
+    <div class="btn">
+        <input onClick="Try()" type="button"  value="Before Me" >
+    </div>
+        <p id="displayDate"></p>
+    </div>
+   
+</div>
+</div> <!--end of inner container-->
+</div>
+    <script>
+       
+        var output = document.getElementById('displayDate');
+        var Time = new Date();
+
+        function Try(){
+            output.innerHTML = "<strong>The time is:</strong>" + "<br>" + Time;
+            }
+        
+        
+        
+    </script>
+</body>
+</html>
