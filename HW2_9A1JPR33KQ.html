@@ -52,11 +52,22 @@
         .row2{
             flex: 1;
             background-color: red;
-            color: #fff;
+            /* color: #fff; */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+        }
+        .row2-container{
+            
+            display: flex;
+            width: 80%;
+            border-radius: 5px;
+            background-color: azure;
+            justify-content: center;
+            align-items: center;
+
         }
 
         input{
@@ -85,8 +96,14 @@
     <div class="btn">
         <input onClick="Try()" type="button"  value="Before Me" >
     </div>
-        <p id="displayDate"></p>
+        
     </div>
+
+    <div class="row2">
+        <div class="row2-container">
+            <p id="displayDate"></p>
+        </div> 
+        </div>
    
 </div>
 </div> <!--end of inner container-->
@@ -97,6 +114,7 @@
         var Time = new Date();
 
         function Try(){
+            
             output.innerHTML = "<strong>The time is:</strong>" + "<br>" + Time;
             }
         
